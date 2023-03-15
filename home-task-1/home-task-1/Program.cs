@@ -35,16 +35,14 @@ class Program
                 string currencyCode = Console.ReadLine()!;
 
                 int index = -1;
-                int i = 0;
 
-                while (i < currencies.Length)
+                for (int i = 0; i < currencies.Length; i++)
                 {
                     if (currencies[i] == currencyCode)
                     {
                         index = i;
                         break;
                     }
-                    i++;
                 }
                 if (index == -1)
                 {
@@ -60,23 +58,22 @@ class Program
             {
                 Console.Write("Məbləği daxil edin: ");
 
-                double amount = double.Parse(Console.ReadLine()!);
+                double amount = Convert.ToDouble(Console.ReadLine()!);
 
                 Console.Write("Məzənnənin alpha3 kodu daxil edin: ");
 
                 string currencyCode = Console.ReadLine()!;
 
                 int index = -1;
-                int i = 0;
 
-                while (i < currencies.Length)
+                for (int i = 0; i < currencies.Length; i++)
                 {
                     if (currencies[i] == currencyCode)
                     {
                         index = i;
                         break;
                     }
-                    i++;
+
                 }
 
                 if (index == -1)

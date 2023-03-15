@@ -21,12 +21,13 @@ namespace arrayPractice
 
             //Daxil  edilen stringin daxilinde reqem olub olmadigi?
             char[] letter = new char[0];
-            int[] name = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+            int[] number = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 
-            for (int i = 0; i < name.Length; i++)
+            for (int i = 0; i < letter.Length; i++)
             {
-                if (name[i] == )
+                if (letter[i] == 0)
                 {
+                    letter[i] = number[i];
                     Console.WriteLine("Reqem var");
                     break;
                 }
@@ -71,6 +72,12 @@ namespace arrayPractice
             //{
             //    Console.WriteLine(numbers[i]);
             //}
+
+
+
+
+
+
 
 
 

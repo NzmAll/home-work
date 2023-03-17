@@ -112,17 +112,17 @@ namespace numbersay
 
 
 
-            //int[] numbers = { 1, 2, 3, 4, 5};
-            //int total = 0;
+            int[] numbers = { 1, 2, 3, 4, 5 };
+            int total = 0;
 
-            //for (int i = 0; i < numbers.Length; i++)
-            //{
-            //    total += numbers[i];
-            //}
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                total += numbers[i];
+            }
 
-            //int average = total / numbers.Length;
+            int average = total / numbers.Length;
 
-            //Console.WriteLine(average);
+            Console.WriteLine(average);
 
 
 

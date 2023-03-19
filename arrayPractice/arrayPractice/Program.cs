@@ -6,11 +6,11 @@
         {
             //1. Daxil edilen stringin her bir characterini ekrana cixarilmasi
 
-            //string name = "Nizami";
+            //Console.Write("Adi daxil edin: ");
+            //string name = Convert.ToString(Console.ReadLine()!);
 
             //for (int i = 0; i < name.Length; i++)
             //{
-            //    char letter = name[i];
             //    Console.WriteLine(name[i]);
             //}
 
@@ -20,35 +20,81 @@
 
             //2. Daxil  edilen stringin daxilinde reqem olub olmadigi?
 
-            //string letter = "Salam menim adim 8 Nizamidir";
+            //    char[] numbers = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
+            //    Console.Write("Adi daxil edin: ");
+            //    string name = Convert.ToString(Console.ReadLine()!);
+            //    bool isTrue = true;
 
-            //for (int i = 0; i < letter.Length; i++)
-            //{
-            //    if (letter[i] == '0' || letter[i] == '1' || letter[i] == '2' || letter[i] == '3' || letter[i] == '4' || letter[i] == '5' ||
-            //        letter[i] == '6' || letter[i] == '7' || letter[i] == '8' || letter[i] == '9')
+            //    for (int i = 0; i < name.Length; i++)
             //    {
-            //        Console.WriteLine("reqem var");
-            //        break;
+            //        for (int j = 0; j < numbers.Length; j++)
+            //        {
+            //            if (name[i] == numbers[j])
+            //            {
+            //                isTrue = false;
+            //            }
+            //        }
             //    }
-            //    else
+
+            //    if (isTrue == true)
             //    {
-            //        Console.WriteLine("reqem yoxdur");
-            //        break;
+            //        Console.WriteLine("Reqem yoxdur");
+            //    }
+            //    else if (isTrue == false)
+            //    {
+            //        Console.WriteLine("Reqem var");
             //    }
             //}
 
 
+
+
+
+
+            //3. Daxil edilen stringin daxilinde herf olub-olmamasi
+
+            //char[] uppercaseLetters = { 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z' };
+            //char[] lowerLetters = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z' };
+
+            //Console.Write("Stringi daxil edin: ");
+            //string name = Convert.ToString(Console.ReadLine()!);
+            //bool isTrue = true;
+
+            //for (int i = 0; i < name.Length; i++)
+            //{
+            //    for (int j = 0; j < uppercaseLetters.Length; j++)
+            //    {
+            //        if (name[i] == uppercaseLetters[j] || name[i] == lowerLetters[j])
+            //        {
+            //            isTrue = false;
+            //        }
+            //    }
+            //}
+
+            //if (isTrue == true)
+            //{
+            //    Console.WriteLine("herf yoxdur");
+            //}
+            //else if (isTrue == false)
+            //{
+            //    Console.WriteLine("herf var");
+            //}
 
 
 
             //4. Daxil edilen stringin arxadan qabaga ekrana yazilmasi
 
-            //string name = "Nizami123";
+            //Console.Write("Adi daxil edin: ");
+            //string name = Convert.ToString(Console.ReadLine()!);
+            //string result = "";
 
-            //for (int i = 8; i < name.Length; i--)
+            //for (int i = name.Length - 1; i >= 0; i--)
             //{
-            //    Console.WriteLine(name[i]);
+            //    result += name[i];
             //}
+            //Console.WriteLine(result);
+
+
 
 
 
@@ -56,13 +102,25 @@
 
             //5. Daxil edilen cumlede her bir sozu ekrana cixarsin
 
-            //string sentence = "Salam menim adim Nizamidir";
-            //string[] letter = sentence.Split(' ');
+            //Console.Write("Adi daxil edin: ");
+            //string sentence = Convert.ToString(Console.ReadLine()!);
+            //string letter = "";
 
-            //for (int i = 0; i < letter.Length; i++)
+            //for (int i = 0; i < sentence.Length; i++)
             //{
-            //    Console.WriteLine(letter[i]);
+            //    if (sentence[i] == ' ')
+            //    {
+            //        Console.WriteLine(letter);
+            //        letter = "";
+            //    }
+            //    else
+            //    {
+            //        letter += sentence[i];
+            //    }
             //}
+
+            //Console.WriteLine(letter);
+
 
 
 
@@ -70,11 +128,12 @@
 
             //6. Reqemin tersine cevrilmesi
 
-            //int[] numbers = { 1, 2, 3, 4, 5 };
+            //Console.Write("Ededi daxil edin: ");
+            //string numbers = Convert.ToString(Console.ReadLine()!);
 
-            //for (int i = 4; i < numbers.Length; i--)
+            //for (int i = numbers.Length - 1; i >= 0; i--)
             //{
-            //    Console.WriteLine(numbers[i]);
+            //    Console.Write(numbers[i]);
             //}
 
 
@@ -86,8 +145,12 @@
 
             //7. Reqemin polindrom olub-olmamasi
 
-            //int[] numbers = { 1, 2, 3 };
-            //int[] number = { 3, 2, 1 };
+            //Console.Write("1-ci stringi daxil edin: ");
+            //String numbers = Convert.ToString(Console.ReadLine()!);
+
+            //Console.WriteLine("2-ci stringi daxil edin: ");
+            //String number = Convert.ToString(Console.ReadLine()!);
+
             //for (int i = 0; i < numbers.Length; i++)
             //{
             //    if (numbers[i] == number[numbers.Length - i - 1])
@@ -104,10 +167,12 @@
 
 
 
-            //9. string daxilinde spacelerin silinmesi
+            //9. String daxilinde spacelerin silinmesi
 
-            //string sentence = "Salam menim adim Nizamidir";
+            //Console.Write("Stringi daxil edin: ");
+            //string sentence = Convert.ToString(Console.ReadLine()!);
             //string result = "";
+
             //for (int i = 0; i < sentence.Length; i++)
             //{
             //    if (sentence[i] != ' ')
@@ -122,13 +187,14 @@
 
 
 
-            //her hansi bir reqemin int daxilinde tekrar olub olmadigi
+            //Her hansi bir reqemin int daxilinde tekrar olub olmadigi
 
-            //int[] numbers = { 1, 2, 3, 3, 5 };
+            //Console.Write("Int-i daxil edin: ");
+            //String numbers = Convert.ToString(Console.ReadLine()!);
 
-            //for(int i = 0; i < numbers.Length; i++)
+            //for (int i = 0; i < numbers.Length; i++)
             //{
-            //    for(int j = i + 1; j < numbers.Length; j++)
+            //    for (int j = i + 1; j < numbers.Length; j++)
             //    {
             //        if (numbers[i] == numbers[j])
             //        {
@@ -152,7 +218,8 @@
 
             //13. Verilen nomre +994 ile baslayib baslamadigini yoxlamaq
 
-            //string number = "+994504068306";
+            //Console.Write("Nomreni daxil edin: ");
+            //string number = Convert.ToString(Console.ReadLine()!);
 
 
             //if (number[0] == '+' && number[1] == '9' && number[2] == '9' && number[3] == '4')
@@ -171,8 +238,10 @@
 
             //12. Verilen stringin daxilinden butun reqemleri silsin
 
-            //string sentence = "Salam menim adim N6izamidir";
+            //Console.Write("Cumleni daxil edin: ");
+            //string sentence = Convert.ToString(Console.ReadLine()!);
             //string result = "";
+
             //for (int i = 0; i < sentence.Length; i++)
             //{
             //    if (sentence[i] == '0' || sentence[i] == '1' || sentence[i] == '2' || sentence[i] == '3' ||
@@ -181,7 +250,7 @@
             //    {
             //        continue;
             //    }
-            //        result += sentence[i];
+            //    result += sentence[i];
             //}
             //Console.WriteLine(result);
 
@@ -189,80 +258,48 @@
 
 
 
-            //3. Daxil edilen stringin daxilinde herf olub-olmamasi
 
-            //char[] uppercaseLetters = { 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z' };
-            //char[] lowerLetters = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z' };
-            //string name = "23567";
-            //bool isTrue = true;
-
-            //for (int i = 0; i < name.Length; i++)
-            //{
-            //    for (int j = 0; j < uppercaseLetters.Length; j++)
-            //    {
-            //        if (name[i] == uppercaseLetters[j] || name[i] == lowerLetters[j])
-            //        {
-            //            isTrue = false;
-            //        }
-            //    }
-            //}
-
-            //if (isTrue == true)
-            //{
-            //    Console.WriteLine("herf yoxdur");
-            //}
-            //else if (isTrue == false)
-            //{
-            //    Console.WriteLine("herf var");
 
 
 
             //14. Her hansi bir stringin basqa bir stringin daxilinde olub olmadigini yoxlamaq
 
-            int[] numbers = { 1, 2, 3, 3, 5 };
-            int[] numbers2 = { 3, 2, 3, 5 };
+            //Console.Write("1-ci stringi daxil edin: ");
+            //string numbers = Convert.ToString(Console.ReadLine()!);
 
-            bool containsAllNumbers = true;
-            for (int i = 0; i < numbers.Length; i++)
-            {
-                bool foundNumber = false;
-                for (int j = 0; j < numbers2.Length; j++)
-                {
-                    if (numbers[i] == numbers2[j])
-                    {
-                        foundNumber = true;
-                        
-                    }
-                }
+            //Console.Write("2-ci stringi daxil edin: ");
+            //string number = Convert.ToString(Console.ReadLine()!);
 
-                if (!foundNumber)
-                {
-                    containsAllNumbers = false;
-                    break;
-                }
-            }
+            //bool containsAllNumbers = true;
+            //for (int i = 0; i < numbers.Length; i++)
+            //{
+            //    bool foundNumber = false;
+            //    for (int j = 0; j < number.Length; j++)
+            //    {
+            //        if (numbers[i] == number[j])
+            //        {
+            //            foundNumber = true;
+            //        }
+            //    }
 
-            if (containsAllNumbers)
-            {
-                Console.WriteLine("eyni eded var");
-            }
-            else
-            {
-                Console.WriteLine("yoxdur");
-            }
+            //    if (!foundNumber)
+            //    {
+            //        containsAllNumbers = false;
+            //        break;
+            //    }
+            //}
 
-
-
-
+            //if (containsAllNumbers)
+            //{
+            //    Console.WriteLine("eyni eded var");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("yoxdur");
+            //}
 
 
 
-
-
-
-
-
-        
         }
     }
 }
